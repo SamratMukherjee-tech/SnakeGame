@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <title>My SkillSets</title>
+        <style>
+          
+            body{
+                background-image: url('https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569__480.jpg');
+                background-size: cover;
+            }
+            .dropbtn {
+                position: fixed;
+                height:50px ;
+                width:50px;
+            }
+
+            .dropdown {
+            position: absolute;
+            /* display: inline-block; */
+            }
+
+            .dropdown-content {
+            display: none;/*It is must for dropdown*/
+            position: absolute;
+            background-color: #f1f1f1;
+            /* min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); */
+            /* z-index: 1; */
+            }
+
+            .dropdown-content a {/*make dropdown look good*/
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            }
+
+            .dropdown-content a :hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: #3e8e41;}
+            button
+            {
+                background-color: green;
+                border-radius: 25px;
+                padding:100px;
+                font-size: 100px;
+                margin-left: 550px;
+                margin-top: 50px;
+            }
+          p{
+              color:white;
+              text-align:center;
+          }
+        </style>
+    </head>
+    <body>
+        <div class="dropdown">
+            <input type="image" src="https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/01/hamburger-menu.png?fit=1200%2C600&ssl=1" class="dropbtn">
+            <div class="dropdown-content">
+              <a href="myResume.html">Home</a>
+              <a href="myQualifications.html">Qualifications</a>
+              <a href="myskillsets.html">Myskills</a>
+            </div>
+          </div>
+        <button onclick="showjava()">Java</button>
+        <p id="java"></p>
+        <button onclick="showc()">C++/<br>C</button>  
+        <p id="c"></p>     
+        <button onclick="showpython()">PYTH<br>ON</button>
+        <p id="python"></p>
+        <button onclick="showhtml()">HTML<br>CSS</button>
+        <p id="html"></p>
+        <button>NODE<br>JS</button>
+    <script>
+        function showjava()
+        {
+	        document.getElementById("java").innerHTML="basics syntax oops data sructures trees stacks queses vectors"+
+                                                      "<br>"+"   hashing abstraction encapsulation polymorphism"
+                                                      +"<br>"+"      graphs functions library packages";
+        }
+
+        function showc()
+        {
+	        document.getElementById("c").innerHTML="basics syntax oops data sructures trees stacks queses vectors"+
+                                                      "<br>"+"   hashing abstraction encapsulation polymorphism"
+                                                      +"<br>"+"      graphs functions library packages";
+        }
+        function showpython()
+        {
+	        document.getElementById("python").innerHTML="basics syntax oops pandas numpy maplot arrays list dict vectors"+
+                                                      "<br>"+"   hashing abstraction encapsulation polymorphism"
+                                                      +"<br>"+"      tuples sets functions library packages";
+        }
+        function showhtml()
+        {
+            document.getElementById("html").innerHTML="basics syntax CSS styling javascript functions arrays comments"+
+                                                      "<br>"+"   background images opacity boders margins paddings"
+                                                      +"<br>"+"      list tuples sets dictionary colors";
+        }
+    </script>
+    </body>   
+</html>
